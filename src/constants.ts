@@ -1,0 +1,3 @@
+export const MEDIUM_BREAKPOINT = 1024
+
+export const SMALL_BREAKPOINT = 600
