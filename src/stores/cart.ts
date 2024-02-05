@@ -87,7 +87,7 @@ export const useCartStore = defineStore('cartStore', {
           : 'Validating provided credit card information...'
         await new Promise((resolve) => setTimeout(resolve, 3000))
 
-        const isValid = Math.random() > 0.2
+        const isValid = Math.random() > 0.5
         if (!isValid) {
           this.paymentStep = 'Form'
           this.isPaymentProgress = false
@@ -100,7 +100,7 @@ export const useCartStore = defineStore('cartStore', {
         this.paymentMessage = 'Processing your payment...'
         await new Promise((resolve) => setTimeout(resolve, 3000))
 
-        const isProcessed = Math.random() > 0.2
+        const isProcessed = Math.random() > 0.5
         if (!isProcessed) {
           this.paymentStep = 'Form'
           this.isPaymentProgress = false
