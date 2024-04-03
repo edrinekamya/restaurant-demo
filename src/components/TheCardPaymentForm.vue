@@ -151,9 +151,7 @@ function validateCcExp(event: any) {
         <input v-model="cart.isOneClick" type="checkbox" name="save" id="save" />
         <p class="row">Securely save my information for 1-click checkout</p>
       </section>
-      <button :disabled="!isFormValid" value="Pay Now" type="submit" class="center button">
-        Pay
-      </button>
+     
     </section>
   </form>
 </template>
